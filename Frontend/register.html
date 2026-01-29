@@ -27,16 +27,16 @@
 
 <div class="container  d-flex flex-column justify-content-center ">
     
-    <form action="submit" class="pt-3  container-fluid   mt-2 " style="width: 500px; height: 400px; align-content: center;">
+    <form action="submit" name="registerform" onsubmit="return validateRegisterForm()" class="pt-3  container-fluid   mt-2 " style="width: 500px; height: 400px; align-content: center;">
 
-            <label for="exampleFormControlInput1" class="form-label mt-3 text-dark fs-4">Full Name</label>
-            <input type="text" class="form-control border-dark " id="exampleFormControlInput1" placeholder="full name">
+            <label for="fname" class="form-label mt-3 text-dark fs-4">Full Name</label>
+            <input type="text" name="fname" class="form-control border-dark " id="fname" placeholder="full name">
         
-            <label for="exampleFormControlInput2" class="form-label mt-3 text-dark fs-4">Email Address</label>
-            <input type="email" class="form-control border-dark " id="exampleFormControlInput2" placeholder="name@example.com">
+            <label for="email" class="form-label mt-3 text-dark fs-4">Email Address</label>
+            <input type="email" name="email" class="form-control border-dark " id="email" placeholder="name@example.com">
              
-            <label for="inputPassword5" class="form-label mt-3 text-dark fs-4">Password</label>
-            <input type="password" id="inputPassword5" class="form-control border-dark" aria-describedby="passwordHelpBlock">
+            <label for="pass" class="form-label mt-3 text-dark fs-4">Password</label>
+            <input type="password" name="pass" id="pass" class="form-control border-dark" aria-describedby="passwordHelpBlock">
 
             <div class="dropdown mt-3">
                 <button class="btn btn-outline-dark dropdown-toggle w-40 fs-4 rounded-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,11 +51,12 @@
             <div class="d-flex justify-content-center">
             <button class="btn btn-primary mt-3 mb-3 fs-4 border border-primary rounded-3 " type="submit">Register</button>
             </div>
+
     </form>
 
 </div>
 
   
-    
+<script src="../JS/register.js"></script>  
 </body>
 </html>
